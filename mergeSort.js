@@ -3,6 +3,7 @@ function mergeSort(arr) {
     const middle = Math.floor(arr.length / 2);
     const leftArr = arr.slice(0, middle);
     const rightArr = arr.slice(middle);
+    
     return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
 function merge(leftArr, rightArr) {
@@ -19,4 +20,5 @@ function merge(leftArr, rightArr) {
     return output;
     
 }
-console.log(mergeSort([10, 5, 3, 8, 2, 6, 4, 7]));
+//console.log(mergeSort([10, 5, 3, 8, 2, 6, 4, 7]));
+console.log(mergeSort([10, 5]));
